@@ -1,0 +1,189 @@
+body{
+    background-color: black;
+    color: white;
+}
+header{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    top: 0;
+    left: 0;
+    padding: 20px 80px;
+    z-index: 99;
+}
+.logo{
+    color: rgb(221, 11, 11);
+   /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
+    user-select: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*text-decoration: underline;*/
+    font-size: 30px;
+}
+.navigation a{
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+    padding: 10px;
+    font-size: 20px;
+    position: relative;
+}
+.navigation a::after{
+    content: ' ';
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    bottom: -6px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s,duration .5s;
+}
+.navigation a:hover{
+    color: gold
+}
+.navigation a:hover:after{
+    transform: scaleX(1);
+}
+ .btnlogin{
+    border: 2px solid white;
+    outline: none;
+    width: 80px;
+    height: 40px;
+    background: transparent;
+    color: whitesmoke;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    transition-duration: 0.5s;
+    margin-left: 30px;
+    transform: scaleX(1);
+}
+.btnlogin:hover{
+    background-color: rgba(238, 226, 226, 0.1);
+    color: gold;
+    text-decoration: underline;
+    transform: scaleX(1.1);
+}
+.container{
+    width: 85%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(header-image.png) ;
+    background-size: center;
+    background-position: absolute;
+    padding: 10px 8%;
+    position: center;
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    text-align: center;
+    margin-top: 100px
+}
+.header-content h1{
+    font-size: 60px;
+    font-family: arial;
+    font-weight: 600px;
+    max-width: 650px;
+    line-height: 70px;
+    margin-bottom: 0px;
+}
+.header-content h3{
+    font-family: arial;
+    font-weight: 400px;
+    margin-bottom: 40px;
+    margin-top: 0px;
+}
+.header-content p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header-content input[type="email"]{
+    border:none;
+    outline: none;
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    background: white;
+}
+.header-content input[type="submit"]{
+    color: rgb(252, 251, 251);
+    background-color: rgb(221,11,11);
+    width: 100px;
+    height: 29px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: scaleY(1);
+    transition-duration: .5s;
+    transition: transform .5s;
+}.header-content input[type="submit"]:hover{
+    opacity:0.9;
+    transform: scaleY(1.3);
+}
+hr{
+    height: 4px;
+   background-color: gray;
+    border: none;
+    outline: none;
+}
+.feature{
+    padding: 50px 12%;
+    font-size: 22px;
+}
+.features-row{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px; 
+
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px; 
+}
+.features-text{
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+.img-col img{
+    display: block;
+    width: 85%;
+    margin:auto;
+}
+.features-text h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom:  20px; ;
+    font-family: My Gill Sans, Lato, sans-serif;
+}
+/* .features-text h1:hover{
+    transform: scaleX(1);
+} 
+.features-text h1::after{
+    content: ' '; 
+    background: white; 
+    width: 75%; 
+    height: 2px;
+    position: absolute;
+    border-radius: 3px;
+    left: 0; 
+    bottom: -6px; 
+    transform-origin:right; 
+    transform: scaleX(0);
+    transition: transform 1s; 
+} 
+.features-text h1:hover::after{ 
+    transform-origin:left; 
+    transform: scaleX(1); 
+} */
+.features-text p{
+    font-size: 20px;
+    font-family: My Gill Sans, Lato, sans-serif;
+}
